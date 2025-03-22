@@ -1,0 +1,19 @@
+# Ignorar arquivos de ambiente virtual
+sklearn-env/
+.anaconda/
+.conda/
+.ipython/
+.jupyter/
+.vscode/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite
+*.log
+*.xlsx
+*.zip
+*.rar
+*.pdf
+*.exe
