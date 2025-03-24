@@ -15,10 +15,11 @@ X_train.shape
 X_test.shape
 
 from sklearn.neighbors import KNeighborsClassifier
+
 knn = KNeighborsClassifier(n_neighbors=5)
 knn.fit(X_train, y_train)
 preds = knn.predict(X_test)
 preds
 
 from sklearn.metrics import accuracy_score
-print(accuracy_score(y_test, preds))
+joblib.dump(knn, 'knn.pkl')
