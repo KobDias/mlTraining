@@ -26,9 +26,9 @@ Este projeto é uma API Flask que serve um modelo de aprendizagem, projetada par
    cd mlTraining
    ```
 3. Configure um ambiente virtual:
-   ```bash
+   ```shell
    python -m venv venv
-   source venv\Scripts\activate
+   venv\Scripts\activate
    ```
 4. Instale os pacotes necessários:
    ```bash
