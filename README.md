@@ -1,5 +1,12 @@
 # API Flask com Modelo de Aprendizagem
 
+### ⚠️ Status do Projeto  
+Este repositório está em **fase de desenvolvimento inicial** e pode não ser executável em outras máquinas devido a:  
+- Problemas com as configurações de ambiente específicas  
+- Bugs conhecidos  
+
+Se quiser contribuir ou testar, abra uma **issue** ou entre em contato!
+
 ## Visão Geral
 Este projeto é uma API Flask que serve um modelo de aprendizagem, projetada para ser integrada a uma página web. A API permite uma interação fluida entre o front-end e o modelo de aprendizagem, possibilitando o processamento dinâmico de dados e previsões. Para estudo de backend conectado a modelos de aprendizagem.
 
