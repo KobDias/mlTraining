@@ -28,10 +28,19 @@ def create_model():
     
     joblib.dump(knn, 'knn.pkl')
 
-def prediz(sep_l, sep_w, pet_l, pet_w):
+def prediz(sepal_length, sepal_width, petal_length, petal_width):
     if not os.path.isfile('knn.pkl'):
         create_model() # Certifica que o arquivo pkl existe
-
     modelo = joblib.load('knn.pkl') # Carregando o modelo
-    especie = modelo.prediz([[sep_l, sep_w, pet_l, pet_w]]) # Predizendo a espécie
+    especie = modelo.prediz([[sepal_length, sepal_width, petal_length, petal_width]]) # Predizendo a espécie
     return especie[0]
+
+def get_prediction(data):
+    return prediz(
+        data['sepal_length'],
+        data['sepal_width'],
+        data['petal_length'],
+        data['petal_width']
+    )
+
+    
